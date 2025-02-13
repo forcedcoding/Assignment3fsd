@@ -46,12 +46,17 @@
         <input type="date" id="dob" name="dob" required><br><br>
 
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required><br><br>
+        <input type="text" name="country_code" title="Error Message" pattern="[1-9]{1}[0-9]{9}"required><br><br>
 
         <label for="address">Address:</label>
         <textarea id="address" name="address" required></textarea><br><br>
 
-        <button type="submit">Submit</button>
+        <button id="non" type="submit">Submit</button>
     </form>
+    <script>
+        document.getElementById("non").onclick = function(){
+            location.href = "new.html";
+        }
+    </script>
 </body>
 </html>
